@@ -6,7 +6,7 @@ export const rnPluginConfig: UserDependencyConfig = {
   commands: [
     {
       name: 'test-new-plugin',
-      func :  () => new Promise((resolve) => { resolve();console.log('Hello world')})
+      func :  async () => { console.log('Hello world'); }
     },
   ],
 };
